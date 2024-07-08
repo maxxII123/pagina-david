@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recomendación de Películas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MovieRecs</div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#recommendations">Recomendaciones</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <h1>Bienvenido a MovieRecs</h1>
+            <p>Descubre películas que te encantarán</p>
+        </section>
+        
+        <section id="recommendations" class="content-section">
+            <h2>Recomendaciones</h2>
+            <div class="recommendation-list">
+                <!-- Recomendación de películas -->
+                <div class="movie-card">
+                    <img src="OIP.jpeg" alt="Movie Poster">
+                    <h3>Iron Man</h3>
+                    <p>Géneros: Acción, Aventura</p>
+                    <p>Calificación: 4.5/5</p>
+                </div>
+                <!-- Repite la estructura para más películas -->
+            </div>
+        </section>
+        
+        <section id="about" class="content-section">
+            <h2>Acerca de</h2>
+            <p>MovieRecs es un sistema de recomendación de películas que utiliza técnicas avanzadas de machine learning para sugerirte películas basadas en tus preferencias.</p>
+        </section>
+        
+        <section id="contact" class="content-section">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos en <a href="mailto:info@movierecs.com">info@movierecs.com</a>.</p>
+        </section>
+        
+        <div class="container">
+            <h1>Formulario de contacto</h1>
+            <form action="procesar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2024 MovieRecs. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
